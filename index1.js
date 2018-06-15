@@ -1,5 +1,8 @@
+
+var oP = document.getElementById("options")
+var oList = document.getElementById("list")
 var oLi = document.getElementsByTagName('li');
-var oBox = document.getElementsByClassName('box')
+var oBox = document.getElementsByClassName('li')
 for(var i=0;i<oLi.length;i++){
     oLi[i].index = i
     oli[i].onclick=function(){

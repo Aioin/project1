@@ -5,20 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            ul li {
+                list-style: none;
+            }
+            #box {
+                width: 400px;
+                height: 400px;
+                border: 1px solid #ccc;
+            }
+            #options {
+                width: 400px;
+                height: 50px;
+                display: flex;
+                text-align: center;
+                line-height: 50px;
+                border-bottom: 1px solid #000;
+            }
+            #options li {
+                flex: 1;
+                border-right: 1px solid #000;
+                box-sizing: border-box;
+            }
+            #options li.active{
+                color: #F00;
+            }
+            #list {
+                width: 400px;
+                height: 350px;
+            }
+            #list li {
+                text-align: center;
+                font-size: 20px;
+                line-height: 350px;
+                display: none;
+            }
+            #list li:first-child{
+                display: block;
+            }
+        </style>
 </head>
 <body>
-    <div id="boxs">
-        <ul class="list">
-            <li></li>
-            <li></li>
-            <li></li>
+    <div id="box">
+        <ul id="options">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
         </ul>
-        <ul class="box">
-            <li></li>
-            <li></li>
-            <li></li>
+        <ul id="list">
+            <li class="box">哈</li>
+            <li class="box">黑</li>
+            <li class="box">哦</li>
         </ul>
     </div>
     
 </body>
+<script src="./index1.js"></script>
 </html>
